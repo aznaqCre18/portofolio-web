@@ -1,0 +1,213 @@
+@import "config";
+
+@import "responsif";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  font-family: $font-stack;
+  background-color: $light-color;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.satu {
+  background-color: $color-primary;
+  font-weight: bold;
+  color: #fff;
+  position: sticky;
+  top: 0;
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      padding: 10px 20px;
+    }
+
+    a {
+      color: #fff;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+
+    img {
+      width: 180px;
+      position: absolute;
+      top: -30px;
+      right: 0;
+    }
+
+    nav {
+      display: flex;
+      padding: 20px 0;
+      margin-right: 20px;
+
+      ul {
+        display: flex;
+        font-weight: lighter;
+
+        .me-option {
+          display: none;
+        }
+      }
+
+      li {
+        list-style-type: none;
+        display: flex;
+        margin: 0 2vh;
+        color: #fff;
+      }
+    }
+  }
+}
+
+#me {
+  background-image: $gradient-me;
+  height: 300px;
+  padding: 20px;
+
+  .me-option {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 100%;
+
+    p {
+      max-width: 500px;
+      flex: 2;
+      height: auto;
+      overflow: auto;
+      color: $color-font-inner;
+    }
+
+    img {
+      max-width: 300px;
+      flex: 0.5;
+    }
+  }
+}
+
+article {
+  background-color: $color-article-background;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.nav-secondary {
+  display: none;
+
+  a {
+    color: white;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+main {
+  #content {
+    padding: 20px;
+    flex: 2;
+    margin: 0 0 0 0;
+
+    .skills {
+      h2 {
+        color: $color-h2;
+        margin-bottom: 1rem;
+      }
+
+      .isi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0px;
+
+        .ul-1 {
+          flex: 1;
+          padding-left: 3rem;
+        }
+
+        .ul-2 {
+          flex: 1;
+        }
+      }
+    }
+
+    .education {
+      padding: 20px;
+      section {
+        h2 {
+          color: $color-h2;
+        }
+
+        .content {
+          padding: 10px 20px;
+          color: $color-font-inner;
+
+          h4 {
+            font-weight: 400;
+          }
+
+          ul {
+            margin: 10px 30px;
+          }
+        }
+      }
+    }
+  }
+
+  aside {
+    flex: 0.8;
+    padding: 20px;
+    margin: 0 0 0 0;
+    text-align: center;
+    box-sizing: border-box;
+
+    h3 {
+      margin: 10px 0;
+    }
+
+    .biodata {
+      background-color: #ff8e6b;
+      border-radius: 10px;
+      padding: 20px;
+
+      h4 {
+        margin-bottom: 20px;
+      }
+
+      table {
+        display: flex;
+        justify-content: center;
+        th,
+        td {
+          padding: 0 30px;
+        }
+      }
+    }
+  }
+}
